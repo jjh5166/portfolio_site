@@ -4,7 +4,6 @@ export const ParallaxGroup = styled.div`
   position: relative;
   height: 100vh;
   transform-style: preserve-3d;
-  outline: solid orange 2px;
 `
 
 export const ParallaxLayer = styled.div`
@@ -22,5 +21,4 @@ export const ParallaxContainer = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   font-size: 200%;
-  scroll-behavior: smooth;  
 `
