@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'
 
-export default function DownArrow({scrollTo}) {
+export default function DownArrow({ scrollTo }) {
+  const [wasClicked, clicking] = useState(false)
   const clickHandler = () => {
+    clicking(true);
     scrollTo.current.scrollIntoView({ behavior: 'smooth' });
   }
   return (
-    <DownArrowContainer onClick={clickHandler}>
+    <DownArrowContainer onClick={clickHandler} wasClicked={wasClicked}>
       <i className="fa fa-chevron-down"></i>
     </DownArrowContainer>
   )
 }
-
 
 const DownArrowContainer = styled.div`
   text-align: center;
@@ -19,6 +20,7 @@ const DownArrowContainer = styled.div`
   position: absolute;
   bottom: 0;
   animation: bounce 2s infinite 3s;
+  animation-play-state: ${props => (props.wasClicked ? 'paused' : 'running')};
   @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
