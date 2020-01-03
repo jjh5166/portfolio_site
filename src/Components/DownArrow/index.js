@@ -15,6 +15,8 @@ export default function DownArrow({ scrollTo }) {
 }
 
 const DownArrowContainer = styled.div`
+  cursor: pointer;
+  z-index: 2;
   text-align: center;
   width: 100%;
   position: absolute;
