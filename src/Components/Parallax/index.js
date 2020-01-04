@@ -5,6 +5,7 @@ export const ParallaxGroup = styled.div`
   height: 100vh;
   transform-style: preserve-3d;
   scroll-snap-align: start;
+  overflow: hidden;
 `
 
 export const ParallaxLayer = styled.div`
