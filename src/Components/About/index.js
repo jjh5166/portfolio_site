@@ -36,10 +36,12 @@ const PicContainer = styled.div`
   }
 `
 const GridDiv = styled.div`
+  height:100%;
 `
 
 const AboutContainer = styled.div`
   display: grid;
+  height:100%;
   grid-template-rows: 33% 90%;
   grid-template-columns: unset;
    @media only screen and (min-width: 640px) and (orientation: landscape){
@@ -56,9 +58,14 @@ const AboutBlurb = styled.div`
   background: black;
   padding: 5%;
   margin: 0 2%;
+  overflow: scroll;
   @media only screen and (min-width: 640px) and (orientation: landscape){
     padding: 7%;
-    margin: 8% 3% 0;
-    
+    margin: 5% 3% 0;
+  }
+  @media only screen and (max-width: 820px) and (orientation: landscape){
+    padding: 4%;
+    margin: 3% 3% 0;
+    max-height: 45%;
   }
 `
