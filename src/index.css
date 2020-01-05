@@ -15,7 +15,7 @@ html, body{
 
 .parallax__layer--base {
   transform: translateZ(0);
-  /* z-index: 1; */
+  z-index: 1;
   height:100vh;
 }
 
@@ -37,7 +37,7 @@ html, body{
 }
 .parallax__layer--fly {
   transform: translateZ(180px) scale(.4);
-  /* z-index: 10; */
+  z-index: -1;
   height:100vh;
 }
 
@@ -49,7 +49,7 @@ html, body{
   z-index: 6;
 }
 .group3{
-  z-index: 5;
+  z-index: 7;
 }
 .group-debug {
 transform: translate3d(700px, 0, -800px) rotateY(30deg);
@@ -62,7 +62,7 @@ transform: translate3d(700px, 0, -800px) rotateY(30deg);
   background-image: url(https://s3.us-east-2.amazonaws.com/jjhv.me/img/matt-power-TpHmEoVSmfQ-unsplash.jpg);
 }
 .fdtn{
-  background-color: rgba(92, 29, 117, 0.801);
+  background-color: rgba(65, 63, 175, 0.95);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
