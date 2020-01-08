@@ -14,7 +14,7 @@ function App() {
   const handleScroll = (event) => {
     let scroller = event.target.scrollTop
     let opac = 'rgba(130,50,75, ' + Math.min(1, ((.002 * scroller) + .4)) + ')';
-    $('.lagos').css('background-color', opac)
+    $('.darken').css('background-color', opac)
     event.stopPropagation()
   }
 
