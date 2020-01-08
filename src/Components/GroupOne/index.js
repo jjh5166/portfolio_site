@@ -6,13 +6,13 @@ import { ParallaxGroup, ParallaxLayer } from '../Parallax'
 
 export default function GroupOne(props) {
   return(
-    <ParallaxGroup className="parallax__group group1">
-      <Lagos className="parallax__layer--back lagos"/>
-      <ParallaxLayer className="parallax__layer--base">
+    <OneGroup className="parallax__group">
+      <Lagos type="back" className="darken"/>
+      <ParallaxLayer type="base">
         <Title />
       </ParallaxLayer>
       <DownArrow scrollTo={props.nextRef}/>
-    </ParallaxGroup>
+    </OneGroup>
   )
 }
 
@@ -26,4 +26,8 @@ const Lagos = styled(ParallaxLayer)`
   @media only screen and (min-width: 813px) {
     background-position-x: 30%
   }
+`
+const OneGroup = styled(ParallaxGroup)`
+  height: 100vh;
+  z-index: 5;
 `
