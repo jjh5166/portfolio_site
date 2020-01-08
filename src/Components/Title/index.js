@@ -27,21 +27,32 @@ const TitleText = styled.div`
   width: fit-content;
   text-shadow:-3px 0px 0 rgba(255, 255, 255, .6), 3px 0px 0 rgba(255, 255, 255, .6);
   transition: text-shadow .5s ease;
-  :hover{
+  animation: unhaze 1s 2s forwards;
+  @keyframes unhaze {
+  100% {
     text-shadow: 3px 0px 0 rgba(6,5,239,0.4), 4px 0px 0 rgba(255,255,255,.6)
   }
+}
 `
 const SubText = styled.div`
 width: fit-content;
   font-size: .5em;
   opacity: .7;
+  /* text-shadow: -1px -1px 0 var(--blinkshadow),
+  1px -1px 0 var(--blinkshadow),
+  -1px 1px 0 var(--blinkshadow),
+  1px 1px 0 var(--blinkshadow),
+  0 -2px 8px, 0 0 2px,
+  0 0 5px #ff7e00,
+  0 0 15px #ff4444,
+  0 0 2px #ff7e00,
+  0 2px 3px #000; */
+
   text-shadow:-2px 0px 0 rgba(6, 5, 239, 0.4), 1px 0px 0 rgba(255, 255, 255, .6);
-  :hover{
-    animation: blinkon 2s linear forwards;
-  };
+  animation: blinkon 2s 2s linear forwards;
   --blinkshadow: rgba(255, 255, 255, .4);
   @keyframes blinkon {
-    0%, 5%, 9%, 35%, 50%, 70%, 100%{
+    0%, 5.99%, 9.99%, 35%, 50%, 70%, 100%{
       opacity: 1;
       color:#ff66b3;
       text-shadow: -1px -1px 0 var(--blinkshadow), 1px -1px 0 var(--blinkshadow), -1px 1px 0 var(--blinkshadow), 1px 1px 0 var(--blinkshadow), 0 -2px 8px, 0 0 2px, 0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
