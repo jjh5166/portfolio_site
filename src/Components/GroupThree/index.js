@@ -1,12 +1,21 @@
 import React from 'react';
+import styled from 'styled-components'
+import SwapModule from '../SwapModule'
 import { ParallaxGroup, ParallaxLayer } from '../Parallax'
 
-export default function GroupOne() {
+export default function GroupThree() {
   return (
-    <ParallaxGroup className="parallax__group group3">
-      <ParallaxLayer className="parallax__layer--base fdtn">
+    <ThreeGroup className="parallax__group">
+      <ParallaxLayer>
+        <SwapModule/>
       </ParallaxLayer>
-
-    </ParallaxGroup>
+    </ThreeGroup>
   )
 }
+
+const ThreeGroup = styled(ParallaxGroup)`
+  height: 100vh;
+  z-index: 7;
+  display:flex;
+  flex-direction: column;
+`
