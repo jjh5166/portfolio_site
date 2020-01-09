@@ -6,9 +6,6 @@ import Projects from '../Projects'
 
 export default function SwapModule() {
   const [selectedTab, selectingTab] = useState('projects')
-  const handleSelect = (section) => {
-    selectingTab(section)
-  }
 
   return (
     <GroupContainer>
@@ -32,13 +29,15 @@ function ShowTab(props) {
   }
 }
 const GroupContainer = styled.div`
+height: 100%;
+
 `
 
 const BottomContainer = styled.div`
 width: 100%;
-background: repeating-radial-gradient(seagreen, beige);
-height: 94vh;
+background: linear-gradient(to right, #98576B, #FFDFBA);
+height: 94%;
 @media only screen and (max-width: 820px) and (orientation: landscape){
-  height: 90vh;
+  height: 90%;
 }
 `

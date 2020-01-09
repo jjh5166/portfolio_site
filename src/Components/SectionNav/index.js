@@ -32,15 +32,14 @@ const GroupNav = styled.div`
   background: black;
   display: inline-flex;
   justify-content: space-between;
-  outline: .5px solid red;
-  height: 6vh;
+  height: 6%;
   @media only screen and (max-width: 820px) and (orientation: landscape){
-    height: 10vh;
+    height: 10%;
   }
 `
 const NavTab = styled.div`
   width: 49.8%;
-  background: darkgreen;
+  background: #454049;
   text-align: center;
   cursor: pointer;
   :hover{
