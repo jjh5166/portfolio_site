@@ -21,7 +21,7 @@ const DownArrowContainer = styled.div`
   width: 100%;
   position: absolute;
   bottom: 0;
-  animation: bounce 2s infinite 3s;
+  animation: bounce 2s infinite 5s;
   animation-play-state: ${props => (props.wasClicked ? 'paused' : 'running')};
   @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
