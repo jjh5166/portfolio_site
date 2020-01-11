@@ -7,7 +7,7 @@ import { ParallaxGroup, ParallaxLayer } from '../Parallax'
 export default function GroupOne(props) {
   return(
     <OneGroup className="parallax__group">
-      <Lagos type="back" className="darken"/>
+      <Lagos type="back"/>
       <ParallaxLayer type="base">
         <Title />
       </ParallaxLayer>
@@ -23,8 +23,14 @@ const Lagos = styled(ParallaxLayer)`
   background-color: rgba(130,50,75,.4);
   will-change: background-color;
   background-position-x: 46%;
+  animation: darker 3s ease-in 1s forwards;
   @media only screen and (min-width: 813px) {
     background-position-x: 30%
+  }
+  @keyframes darker {
+    100%{
+      background-color: rgba(90,50,75, 0.8);
+    }
   }
 `
 const OneGroup = styled(ParallaxGroup)`
