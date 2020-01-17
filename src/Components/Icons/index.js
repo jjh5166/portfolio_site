@@ -10,7 +10,7 @@ export default function Icons() {
       <IconLink href="https://www.linkedin.com/in/jjhv5/" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-linkedin"/>
       </IconLink>
-      <IconLink href="https://www.linkedin.com/in/jjhv5/" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://www.goodreads.com/user/show/58250451-john" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-goodreads"/>
       </IconLink>
     </IconContainer>
