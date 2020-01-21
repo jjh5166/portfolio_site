@@ -39,6 +39,7 @@ const SubText = styled.div`
   font-size: .5em;
   opacity: .7;
   animation: blinkon 2s 4s linear forwards;
+  font-family: 'Pacifico', cursive;
   --blinkshadow: #ff66b3;
   @keyframes blinkon {
     0%, 5.99%, 9.99%, 35%, 50%, 70%, 100%{
@@ -52,4 +53,5 @@ const SubText = styled.div`
 `
 const Brace = styled.span`
   font-size: 1.25em;
+  font-family: 'Overpass', sans-serif;
 `
