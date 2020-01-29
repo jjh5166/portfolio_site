@@ -28,6 +28,7 @@ const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background: linear-gradient(to right, #98576B, #FFDFBA);
   @media only screen and (max-width: 820px) and (orientation: landscape){
     flex-direction: row;
     justify-content: space-between;

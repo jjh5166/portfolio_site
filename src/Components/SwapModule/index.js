@@ -35,7 +35,6 @@ height: 100%;
 
 const BottomContainer = styled.div`
 width: 100%;
-background: linear-gradient(to right, #98576B, #FFDFBA);
 height: 94%;
 @media only screen and (max-width: 820px) and (orientation: landscape){
   height: 90%;
