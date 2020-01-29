@@ -10,20 +10,23 @@ export default function Projects() {
       repo: "https://github.com/jjh5166/prempicks",
       appURL: "http://prempicks.herokuapp.com/",
       sshot: "https://s3.us-east-2.amazonaws.com/jjhv.me/img/prempicks.png",
-      bkgdAdjust: "0 0"
+      bkgdAdjust: "0 0",
+      blurb: "A custom picks league for the English Premier League. Built with Ruby on Rails, using Sidekiq on Redis for backend, a Postgres database and a Python script. Automated email reminders, API monitoring for scoring scripts to be run. The app is fully responsive and the league has 50 users this season!"
     },
     {
       projName: "React Calendar",
       repo: "https://github.com/jjh5166/react_calendar",
       appURL: "https://jjhvcal.netlify.com/",
-      sshot: "https://s3.us-east-2.amazonaws.com/jjhv.me/img/matt-power-TpHmEoVSmfQ-unsplash.jpg"
+      sshot: "https://s3.us-east-2.amazonaws.com/jjhv.me/img/matt-power-TpHmEoVSmfQ-unsplash.jpg",
+      blurb: "A calendar application built in React. Extensive use of the Context API for interacting with Momenter.js"
     },
     {
       projName: "Portfolio Site",
       repo: "https://github.com/jjh5166/portfolio_site",
       appURL: "jjhv.me",
       sshot: "https://s3.us-east-2.amazonaws.com/jjhv.me/img/portfolio_site.png",
-      bkgdAdjust: "0 44%"
+      bkgdAdjust: "0 44%",
+      blurb: "Take a look under the hood of this page! Built in React."
     }
   ]
   return (
