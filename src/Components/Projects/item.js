@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { 
-        ProjLinks,
+        ProjButtons,
         ProjBlurbContainer,
-        ButtonStyle,
         ProjHeaderText,
         Project,
         ProjHeaderContainer,
@@ -58,20 +57,7 @@ const ProjHeader = ({text}) => {
     </ProjHeaderContainer>
   )
 }
-const ProjButtons = ({repo, appURL}) => {
-  return(
-    <ProjLinks>
-      <ButtonStyle href={appURL} target="_blank" rel="noopener noreferrer">
-        <i className="fas fa-external-link-alt"></i>
-        <span>Visit App</span>
-      </ButtonStyle>
-      <ButtonStyle href={repo} target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-github-alt"></i>
-        <span>View Repository</span>
-      </ButtonStyle>
-    </ProjLinks>
-  )
-}
+
 const ProjBlurb = ({text}) => {
   return(
     <ProjBlurbContainer>

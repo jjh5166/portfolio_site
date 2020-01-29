@@ -1,24 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
 
-export const ProjLinks = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 25%;
-  font-size: calc(10px + 1vw);
-  width: 80%;
-  @media only screen and (min-width: 660px) and (orientation: landscape){
-    flex-direction: row;
-  }
-  @media only screen and (max-width: 820px) and (orientation: landscape){
-    width: 354px;
-    height: 44px;
-  }
-  @media only screen and (min-width: 820px) and (orientation: landscape){
-    width: 400px;
-    height: 50px;
-  }
-`
 export const ProjBlurbContainer = styled.div`
   font-size: calc(10px + 1vw);
   background: hsla(0, 0%, 10%, .8);
@@ -30,62 +12,8 @@ export const ProjBlurbContainer = styled.div`
   overflow: scroll;
   width: 100%;
   margin-bottom: -.05%;
-  @media only screen and (max-width: 820px) and (orientation: landscape){
-    /* height: 44px; */
-  }
-  @media only screen and (min-width: 820px) and (orientation: landscape){
-  }
   p{
     padding: 12px 24px;
-  }
-`
-export const ButtonStyle = styled.a`
-	cursor: pointer;
-	display: inline-block;
-  position: relative;
-  background: #fff;
-  color: darkgrey;
-  overflow: hidden;
-  padding: 14px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  i{
-    color: darkgrey;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    font-size: 180%;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    left: 0;
-    top: -100%;
-  }
-  span {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.3s;
-    -webkit-backface-visibility: hidden;
-    -moz-transition: all 0.3s;
-    -moz-backface-visibility: hidden;
-    transition: all 0.3s;
-    backface-visibility: hidden;
-  }
-  :hover{
-    span {
-      -webkit-transform: translateY(300%);
-      -moz-transform: translateY(300%);
-      -ms-transform: translateY(300%);
-      transform: translateY(300%);
-    }
-    i{
-      top: 0;
-    }
   }
 `
 
@@ -140,3 +68,100 @@ export const PDContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 `
+const ProjLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25%;
+  font-size: calc(10px + 1vw);
+  width: 80%;
+  @media only screen and (min-width: 660px) and (orientation: landscape){
+    flex-direction: row;
+  }
+  @media only screen and (max-width: 820px) and (orientation: landscape){
+    width: 354px;
+    height: 44px;
+  }
+  @media only screen and (min-width: 820px) and (orientation: landscape){
+    width: 400px;
+    height: 50px;
+  }
+`
+const ButtonStyle = styled.a`
+	cursor: pointer;
+	display: inline-block;
+  position: relative;
+  background: #fff;
+  color: darkgrey;
+  overflow: hidden;
+  font-size: 16px;
+  padding: 14px;
+  line-height: 24px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+  :before{
+    left: 0;
+	  top: -100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  :hover{
+    span {
+      -webkit-transform: translateY(300%);
+      -moz-transform: translateY(300%);
+      -ms-transform: translateY(300%);
+      transform: translateY(300%);
+    }
+    :before {
+	    top: -20%;
+    }
+  }
+`
+
+const ExtLinkButton = styled(ButtonStyle)`
+  :before{
+    font-weight: 900;
+    font-family: "Font Awesome 5 Pro";
+    content: "\f35d";
+  }
+`
+const GitHubButton = styled(ButtonStyle)`
+  :before{
+    font-family: "Font Awesome 5 Brands";
+    content: "\f113";
+  }
+`
+
+export const ProjButtons = ({ repo, appURL }) => {
+  return (
+    <ProjLinks>
+      <ExtLinkButton href={appURL} target="_blank" rel="noopener noreferrer">
+        <span>Visit Site</span>
+      </ExtLinkButton>
+      <GitHubButton href={repo} target="_blank" rel="noopener noreferrer">
+        <span>View Repository</span>
+      </GitHubButton>
+    </ProjLinks>
+  )
+}
