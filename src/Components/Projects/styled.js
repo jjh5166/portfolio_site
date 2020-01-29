@@ -103,6 +103,7 @@ const ButtonStyle = styled.a`
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 12px;
   span {
     display: inline-block;
     width: 100%;
