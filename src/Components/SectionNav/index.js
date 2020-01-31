@@ -24,9 +24,6 @@ export default function SectionNav({onSelect}) {
 }
 
 
-
-
-
 const GroupNav = styled.div`
   width: 100%;
   background: black;
@@ -39,7 +36,7 @@ const GroupNav = styled.div`
 `
 const NavTab = styled.div`
   width: 49.8%;
-  background: #454049;
+  background: #685A72;
   text-align: center;
   cursor: pointer;
   :hover{
