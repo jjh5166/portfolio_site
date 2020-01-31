@@ -5,10 +5,10 @@ const handleLayerType = type => {
     case "fore":
       return " -webkit-transform: translateZ(90px) scale(.7);" +
       "transform: translateZ(90px) scale(.7);" +
-      "z-index: 2";
+      "z-index: -1";
     case "deep":
-      return "-webkit-transform: translateZ(-600px) scale(3);" +
-      "transform: translateZ(-600px) scale(3);"+
+      return "-webkit-transform: translateZ(-900px) scale(4);" +
+      "transform: translateZ(-900px) scale(4);"+
       "z-index: -10;";
     case "back":
       return "-webkit-transform: translateZ(-300px) scale(2);" +

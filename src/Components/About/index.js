@@ -30,7 +30,7 @@ const Pic = styled.div`
 const PicContainer = styled.div`
   margin-top: 3%;
   clip-path: circle(96px at center);
-  background: linear-gradient(to bottom right,red, yellow, blue);
+  background: linear-gradient(to bottom right,#685A72, white, #685A72);
   @media only screen and (min-width: 640px) and (orientation: landscape){
     margin-top: 20%;
   }
@@ -50,18 +50,18 @@ const AboutContainer = styled.div`
   }
 `
 const AboutBlurb = styled.div`
-  font-size: calc(12px + 1vw);  
+  font-size: calc(12px + 1vw);
   color: white;
   text-align: left;
   line-height: 1.5;
   border-radius: 45px;
-  background: black;
+  background: #685A72;
   padding: 5%;
   margin: 0 2%;
   overflow: scroll;
   @media only screen and (min-width: 640px) and (orientation: landscape){
     padding: 7%;
-    margin: 5% 3% 0;
+    margin: 5% 2% 0;
   }
   @media only screen and (max-width: 820px) and (orientation: landscape){
     padding: 4%;
