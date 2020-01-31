@@ -12,37 +12,9 @@ const GroupTwo = React.forwardRef((props, ref) => (
         <About />
       </TwoBase>
       <Fore type="fore">
-        <TriRow row={-10} />
-        <TriRow row={-9} />
-        <TriRow row={-8} />
-        <TriRow row={-7} />
-        <TriRow row={-6} />
-        <TriRow row={-5} />
-        <TriRow row={-4} />
-        <TriRow row={-3} />
-        <TriRow row={-2} />
-        <TriRow row={-1} />
-        <TriRow row={0} />
-        <TriRow row={1} />
-        <TriRow row={2} />
-        <TriRow row={3} />
-        <TriRow row={4} />
-        <TriRow row={5} />
-        <TriRow row={6} />
-        <TriRow row={7} />
-        <TriRow row={8} />
-        <TriRow row={9} />
-        <TriRow row={10} />
-        <TriRow row={11} />
-        <TriRow row={12} />
-        <TriRow row={13} />
-        <TriRow row={14} />
-        <TriRow row={15} />
-        <TriRow row={16} />
-        <TriRow row={17} />
-        <TriRow row={18} />
-        <TriRow row={19} />
-        <TriRow row={20} />
+        {[...Array(30)].map((_, i) => {
+          return (<TriRow row={i-10} key={"Row"+i}/>)
+        })}
       </Fore>
     </TwoGroup>
 ))
