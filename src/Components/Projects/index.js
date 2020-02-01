@@ -23,7 +23,7 @@ export default function Projects() {
     {
       projName: "Portfolio Site",
       repo: "https://github.com/jjh5166/portfolio_site",
-      appURL: "jjhv.me",
+      appURL: "https://jjhv.me",
       sshot: "https://s3.us-east-2.amazonaws.com/jjhv.me/img/portfolio_site.png",
       bkgdAdjust: "0 44%",
       blurb: "Take a look under the hood of this page! Built in React."
