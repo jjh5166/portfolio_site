@@ -19,6 +19,8 @@ export default function GroupOne(props) {
 const Lagos = styled(ParallaxLayer)`
   background-image: url(https://s3.us-east-2.amazonaws.com/jjhv.me/img/lagos_palms.jpg);
   background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   background-color: rgba(130,50,75,.4);
   will-change: background-color;
