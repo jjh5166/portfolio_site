@@ -38,12 +38,18 @@ const color4 = "rgba(242,109,153,.8)"
 
 const Deep = styled(ParallaxLayer)`
   background-image: url("https://s3.us-east-2.amazonaws.com/jjhv.me/img/qbkls.png");
-  background-color: rgba(254,179,165,0.6);
   background-color: rgba(255,217,179,0.6);
   background-blend-mode: multiply;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   top: -10%;
+  z-index: -10;
 `
-const Fore = styled(ParallaxLayer)``
+const Fore = styled(ParallaxLayer)`
+  z-index: -1;
+`
 // const colors = [color1, color2, color3, color4]
 const Tri = styled.div.attrs(props => ({
   style: {
@@ -59,7 +65,9 @@ const Tri = styled.div.attrs(props => ({
   border-right: 30px solid transparent;
 `
 
-const TwoBase = styled(ParallaxLayer)``
+const TwoBase = styled(ParallaxLayer)`
+  z-index: 1;
+`
 const TwoGroup = styled(ParallaxGroup)`
   height: 94vh;
   z-index: 6;
