@@ -15,7 +15,7 @@ export default function About() {
       </GridDiv>
       <GridDiv>
         <AboutBlurb>
-          <p>Hi, I'm John. I’m a full-stack web developer with a background in financial operations. I’m looking for a team that values collaboration and embraces a never-stop-learning attitude. As a self-taught programmer, I’m fast-learner and always seeking new challenges. I like to think outside the box and come up with creative, efficient solutions. I’m currently focusing on refining my React skills and learning how to use Firebase. </p>
+          <p>Hi, I'm John. I’m a full-stack web developer with a background in financial operations. I’m looking for a team that values collaboration and embraces a never-stop-learning attitude. As a self-taught programmer, I’m a fast-learner and always seeking new challenges. I like to think outside the box and come up with creative, efficient solutions. I’m currently focusing on refining my React skills and learning how to use Firebase. </p>
           <br></br>
           <p>My experience is mainly in Javascript and Ruby, but I’m always open to learning new languages or utilizing a new library. User experience and functionality are important to me with the things I create. In my free time I’m an avid reader, a dilettante guitarist and a cinephile.</p>
         </AboutBlurb>
