@@ -49,6 +49,10 @@ const Deep = styled(ParallaxLayer)`
 `
 const Fore = styled(ParallaxLayer)`
   z-index: -1;
+  position: static;
+  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+    position: absolute;
+  }
 `
 // const colors = [color1, color2, color3, color4]
 const Tri = styled.div.attrs(props => ({

@@ -29,10 +29,12 @@ export const ParallaxGroup = styled.div`
   height: 100vh;
   width:100%;
   min-height: -webkit-fill-available;
-  transform-style: preserve-3d;
   scroll-snap-align: start;
   overflow: hidden;
-`
+  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+    transform-style: preserve-3d;
+  };
+  `
 
 export const ParallaxLayer = styled.div`
   position: absolute;
@@ -49,6 +51,7 @@ export const ParallaxLayer = styled.div`
 export const ParallaxContainer = styled.div`
   height: 100%;
   min-height: -webkit-fill-available;
+  -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
   overflow-y: auto;
   font-size: 200%;
