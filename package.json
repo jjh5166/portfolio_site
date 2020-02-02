@@ -7,12 +7,13 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0",
+    "serialize-javascript": "^2.1.2",
     "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy":"aws s3 sync build/ s3://jjhv.me --acl public-read",
+    "deploy": "aws s3 sync build/ s3://jjhv.me --acl public-read",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
