@@ -28,7 +28,6 @@ export const ParallaxGroup = styled.div`
   position: relative;
   height: 100vh;
   width:100%;
-  min-height: -webkit-fill-available;
   scroll-snap-align: start;
   overflow: hidden;
   @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
