@@ -40,6 +40,8 @@ const Deep = styled(ParallaxLayer)`
   background-image: url("https://s3.us-east-2.amazonaws.com/jjhv.me/img/qbkls.png");
   background-color: rgba(255,217,179,0.6);
   background-blend-mode: multiply;
+  background-size: contain;
+  background-repeat: no-repeat;
   top: -10%;
   z-index: -10;
 `
