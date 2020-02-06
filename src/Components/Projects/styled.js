@@ -18,6 +18,7 @@ export const ProjBlurbContainer = styled.div`
 `
 
 export const Project = styled.div`
+  cursor: pointer;
   flex: 1 0 5%;
   display: flex;
   justify-content: center;

@@ -1,4 +1,5 @@
 import React, { useRef} from 'react';
+import Div100vh from 'react-div-100vh';
 // import $ from 'jquery';
 import {ParallaxContainer} from './Components/Parallax'
 import GroupOne from './Components/GroupOne'
@@ -13,13 +14,14 @@ function App() {
   // };
 
   return (
-
+    <Div100vh>
       <ParallaxContainer>
         {/* <button className="thebutton" onClick={debugOn}>debug</button> */}
         <GroupOne nextRef={group2}/>
         <GroupTwo ref={group2} fordwardRef={waves}/>
         <GroupThree/>
       </ParallaxContainer>
+    </Div100vh>
 
   );
 }

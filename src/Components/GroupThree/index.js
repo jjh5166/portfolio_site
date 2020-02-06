@@ -14,7 +14,6 @@ export default function GroupThree() {
 }
 
 const ThreeGroup = styled(ParallaxGroup)`
-  height: 100vh;
   z-index: 7;
   display:flex;
   flex-direction: column;

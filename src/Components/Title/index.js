@@ -40,6 +40,7 @@ const SubText = styled.div`
   opacity: .7;
   animation: blinkon 2s 4s linear forwards;
   font-family: 'Pacifico', cursive;
+  font-display: block;
   --blinkshadow: #ff66b3;
   @keyframes blinkon {
     0%, 5.99%, 9.99%, 35%, 50%, 70%, 100%{

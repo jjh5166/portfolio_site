@@ -36,6 +36,5 @@ const Lagos = styled(ParallaxLayer)`
   }
 `
 const OneGroup = styled(ParallaxGroup)`
-  height: 100vh;
   z-index: 5;
 `

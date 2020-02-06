@@ -5,19 +5,22 @@ import { ParallaxGroup, ParallaxLayer } from '../Parallax'
 
 const GroupTwo = React.forwardRef((props, ref) => (
 
-    <TwoGroup className="parallax__group" ref={ref}>
-      <Deep type="deep">
-      </Deep>
-      <TwoBase type="base">
-        <About />
-      </TwoBase>
-      <Fore type="fore">
-        {[...Array(30)].map((_, i) => {
-          return (<TriRow row={i-10} key={"Row"+i}/>)
-        })}
-      </Fore>
-    </TwoGroup>
-))
+      <TwoGroupContainer>
+      <TwoGroup className="parallax__group" ref={ref}>
+        <Deep type="deep">
+        </Deep>
+        <TwoBase type="base">
+          <About />
+        </TwoBase>
+        <Fore type="fore">
+          {[...Array(30)].map((_, i) => {
+            return (<TriRow row={i-10} key={"Row"+i}/>)
+          })}
+        </Fore>
+      </TwoGroup>
+      </TwoGroupContainer>
+));
+
 const TriRow = ({row}) => {
   return(
   [...Array(20)].map((_, i) => {
@@ -40,6 +43,8 @@ const Deep = styled(ParallaxLayer)`
   background-image: url("https://s3.us-east-2.amazonaws.com/jjhv.me/img/qbkls.png");
   background-color: rgba(255,217,179,0.6);
   background-blend-mode: multiply;
+  background-size: contain;
+  background-repeat: no-repeat;
   top: -10%;
   z-index: -10;
 `
@@ -69,10 +74,13 @@ const TwoBase = styled(ParallaxLayer)`
   z-index: 1;
 `
 const TwoGroup = styled(ParallaxGroup)`
-  height: 94vh;
   z-index: 6;
+`
+const TwoGroupContainer = styled.div`
+  width:100%;
+  height: 94%;
   @media only screen and (max-width: 820px) and (orientation: landscape){
-    height: 90vh;
+    height: 90%;
   }
 `
 export default GroupTwo;

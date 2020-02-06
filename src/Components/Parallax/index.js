@@ -26,7 +26,7 @@ const handleLayerType = type => {
 };
 export const ParallaxGroup = styled.div`
   position: relative;
-  height: 100vh;
+  height: 100%;
   width:100%;
   scroll-snap-align: start;
   overflow: hidden;
