@@ -40,13 +40,27 @@ const color3 = "rgba(254,179,165,.8)"
 const color4 = "rgba(242,109,153,.8)"
 
 const Deep = styled(ParallaxLayer)`
-  background-image: url("https://s3.us-east-2.amazonaws.com/jjhv.me/img/qbkls.png");
-  background-color: rgba(255,217,179,0.6);
-  background-blend-mode: multiply;
+  background: url("https://s3.us-east-2.amazonaws.com/jjhv.me/img/qbkls.png");
+   -webkit-background-size: contain;
+  -moz-background-size: contain;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   top: -10%;
   z-index: -10;
+  :before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,217,179,0.6);
+    z-index: 2;
+    mix-blend-mode: multiply
+  }
+  @media only screen and (min-width: 820px) and (orientation: landscape){
+    background-size: auto;
+  }
 `
 const Fore = styled(ParallaxLayer)`
   z-index: -1;
