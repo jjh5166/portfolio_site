@@ -37,10 +37,10 @@ export const Project = styled.div`
     `:hover{ background-color: hsla(0, 0%, 27%, 1);
       color: hsla(0, 0%, 100%, 1);}`
   }
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     height:100%;
   }
-  @media only screen and (min-width: 820px) and (orientation: landscape){
+  @media only screen and (min-width: 823px) and (orientation: landscape){
     background-position: ${props => props.bkgdAdjust};
   }
 `
@@ -79,11 +79,11 @@ const ProjLinks = styled.div`
   @media only screen and (min-width: 660px) and (orientation: landscape){
     flex-direction: row;
   }
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     width: 354px;
     height: 44px;
   }
-  @media only screen and (min-width: 820px) and (orientation: landscape){
+  @media only screen and (min-width: 823px) and (orientation: landscape){
     width: 400px;
     height: 50px;
   }

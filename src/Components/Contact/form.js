@@ -127,7 +127,7 @@ const FormContainer = styled.div`
     height: 65%;
     width: 40%;
   }
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     order: 2;
     width: 1000px;
     margin-top: 2%;

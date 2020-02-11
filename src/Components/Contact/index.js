@@ -29,7 +29,7 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   background: linear-gradient(to right, #98576B, #FFDFBA);
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     flex-direction: row;
     justify-content: space-between;
   }
@@ -43,14 +43,14 @@ const EmailLink = styled.div`
   > a, a:visited{
     color: white;
   }
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     order: 1;
     flex-direction: column;
     font-size: 15px;
   }
 `
 const ContactHeader = styled.h2`
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     display: none;
   }
 `

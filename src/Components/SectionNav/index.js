@@ -30,7 +30,7 @@ const GroupNav = styled.div`
   display: inline-flex;
   justify-content: space-between;
   height: 6%;
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     height: 10%;
   }
 `

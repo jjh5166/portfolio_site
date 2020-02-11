@@ -36,7 +36,7 @@ height: 100%;
 const BottomContainer = styled.div`
 width: 100%;
 height: 94%;
-@media only screen and (max-width: 820px) and (orientation: landscape){
+@media only screen and (max-width: 823px) and (orientation: landscape){
   height: 90%;
 }
 `
