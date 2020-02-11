@@ -25,7 +25,7 @@ const IconContainer = styled.div`
   > a:visited{
     color: white;
   }
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     order: 3;
     flex-direction: column;
   }
@@ -35,7 +35,7 @@ const IconLink = styled.a`
   color: white;
   margin: 0 4px;
   font-size: 45px;
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     margin: 6px 0;
   }
 `

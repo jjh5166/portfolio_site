@@ -62,11 +62,11 @@ const ProjFlex = styled.div`
   flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     flex-direction: row;
     flex-wrap: wrap;
   }
-  @media only screen and (min-width: 820px) and (orientation: landscape){
+  @media only screen and (min-width: 823px) and (orientation: landscape){
   }
 `
 

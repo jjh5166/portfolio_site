@@ -58,7 +58,7 @@ const Deep = styled(ParallaxLayer)`
     z-index: 2;
     mix-blend-mode: multiply
   }
-  @media only screen and (min-width: 820px) and (orientation: landscape){
+  @media only screen and (min-width: 823px) and (orientation: landscape){
     background-size: auto;
   }
 `
@@ -93,7 +93,7 @@ const TwoGroup = styled(ParallaxGroup)`
 const TwoGroupContainer = styled.div`
   width:100%;
   height: 94%;
-  @media only screen and (max-width: 820px) and (orientation: landscape){
+  @media only screen and (max-width: 823px) and (orientation: landscape){
     height: 90%;
   }
 `
