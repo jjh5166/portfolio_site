@@ -23,7 +23,7 @@ const GroupTwo = React.forwardRef((props, ref) => (
 
 const TriRow = ({row}) => {
   return(
-  [...Array(20)].map((_, i) => {
+  [...Array(35)].map((_, i) => {
     let start = (row % 2) === 0 ? -30 : 0
     let color = (row % 4) === 0 ? color4 : (row % 3) === 0 ? color3 : (row % 2) === 0 ? color2 : color1
     // randomize colors
