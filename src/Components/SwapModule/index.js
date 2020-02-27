@@ -30,13 +30,12 @@ function ShowTab(props) {
 }
 const GroupContainer = styled.div`
 height: 100%;
-
 `
 
 const BottomContainer = styled.div`
 width: 100%;
 height: 92%;
-@media only screen and (min-height: 600px) and (orientation: portrait){
+@media only screen and (min-height: 600px){
   height: 94%;
 }
 @media only screen and (max-width: 823px) and (orientation: landscape){
