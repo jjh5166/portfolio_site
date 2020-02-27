@@ -5,32 +5,32 @@ import { ParallaxGroup, ParallaxLayer } from '../Parallax'
 
 const GroupTwo = React.forwardRef((props, ref) => (
 
-      <TwoGroupContainer>
-      <TwoGroup className="parallax__group" ref={ref}>
-        <Deep type="deep">
-        </Deep>
-        <TwoBase type="base">
-          <About />
-        </TwoBase>
-        <Fore type="fore">
-          {[...Array(30)].map((_, i) => {
-            return (<TriRow row={i-10} key={"Row"+i}/>)
-          })}
-        </Fore>
-      </TwoGroup>
-      </TwoGroupContainer>
+  <TwoGroupContainer>
+    <TwoGroup className="parallax__group" ref={ref}>
+      <Deep type="deep">
+      </Deep>
+      <TwoBase type="base">
+        <About />
+      </TwoBase>
+      <Fore type="fore">
+        {[...Array(30)].map((_, i) => {
+          return (<TriRow row={i - 10} key={"Row" + i} />)
+        })}
+      </Fore>
+    </TwoGroup>
+  </TwoGroupContainer>
 ));
 
-const TriRow = ({row}) => {
-  return(
-  [...Array(35)].map((_, i) => {
-    let start = (row % 2) === 0 ? -30 : 0
-    let color = (row % 4) === 0 ? color4 : (row % 3) === 0 ? color3 : (row % 2) === 0 ? color2 : color1
-    // randomize colors
-    // let color = colors[Math.floor(Math.random() * colors.length)];
-    let theProps = { left: (i * 60 + start + "px"), row: row, color: color };
-    return (<Tri {...theProps} key={"Tri" + row + i} />)
-  })
+const TriRow = ({ row }) => {
+  return (
+    [...Array(35)].map((_, i) => {
+      let start = (row % 2) === 0 ? -30 : 0
+      let color = (row % 4) === 0 ? color4 : (row % 3) === 0 ? color3 : (row % 2) === 0 ? color2 : color1
+      // randomize colors
+      // let color = colors[Math.floor(Math.random() * colors.length)];
+      let theProps = { left: (i * 60 + start + "px"), row: row, color: color };
+      return (<Tri {...theProps} key={"Tri" + row + i} />)
+    })
   )
 }
 
@@ -41,7 +41,7 @@ const color4 = "rgba(242,109,153,.8)"
 
 const Deep = styled(ParallaxLayer)`
   background: url("https://s3.us-east-2.amazonaws.com/jjhv.me/img/qbkls.png");
-   -webkit-background-size: contain;
+  -webkit-background-size: contain;
   -moz-background-size: contain;
   background-size: contain;
   background-repeat: repeat;
@@ -93,7 +93,7 @@ const TwoGroup = styled(ParallaxGroup)`
 const TwoGroupContainer = styled.div`
   width:100%;
   height: 92%;
-  @media only screen and (min-height: 600px) and (orientation: portrait){
+  @media only screen and (min-height: 600px){
     height: 94%;
   }
   @media only screen and (max-width: 823px) and (orientation: landscape){

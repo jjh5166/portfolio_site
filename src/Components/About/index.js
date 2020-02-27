@@ -79,9 +79,13 @@ const AboutBlurb = styled.div`
   @media only screen and (min-height: 580px) and (orientation: portrait){
     max-height: 97%;
   }
+  @media only screen and (min-height: 800px) and (orientation: portrait){
+    line-height: 1.5;
+  }
   @media only screen and (min-width: 580px) and (orientation: landscape){
     height: 90%;
     margin: 0% 2%;
+    line-height: 1;
   }
   @media only screen and (min-width: 824px) and (orientation: landscape){
     line-height: 1.5;
