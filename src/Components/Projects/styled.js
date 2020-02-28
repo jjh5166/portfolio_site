@@ -73,9 +73,12 @@ const ProjLinks = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 25%;
+  height: 35%;
   font-size: calc(10px + 1vw);
   width: 80%;
+  @media only screen and (min-height: 660px){
+    height: 25%;
+  }
   @media only screen and (min-width: 660px) and (orientation: landscape){
     flex-direction: row;
   }
