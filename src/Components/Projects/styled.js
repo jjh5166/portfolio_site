@@ -99,7 +99,7 @@ const ButtonStyle = styled.a`
   color: darkgrey;
   overflow: hidden;
   font-size: 16px;
-  padding: 14px;
+  padding: 3%;
   line-height: 24px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -108,6 +108,9 @@ const ButtonStyle = styled.a`
 	-moz-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 12px;
+  @media only screen and (min-width: 823px) and (orientation: landscape){
+    padding: 14px;
+  }
   span {
     display: inline-block;
     width: 100%;
@@ -148,13 +151,17 @@ const ExtLinkButton = styled(ButtonStyle)`
   :before{
     font-weight: 900;
     font-family: "Font Awesome 5 Pro";
-    content: "\f35d";
+    @media only screen and (min-width: 823px) and (orientation: landscape){
+      content: "\f35d";
+    }
   }
 `
 const GitHubButton = styled(ButtonStyle)`
   :before{
     font-family: "Font Awesome 5 Brands";
-    content: "\f113";
+    @media only screen and (min-width: 823px) and (orientation: landscape){
+      content: "\f113";
+    }
   }
 `
 
