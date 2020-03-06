@@ -27,7 +27,7 @@ const TitleText = styled.div`
   width: fit-content;
   text-shadow:-3px 0px 0 rgba(255, 255, 255, .6), 3px 0px 0 rgba(255, 255, 255, .6);
   transition: text-shadow .5s linear;
-  animation: unhaze 1s linear 2s forwards;
+  animation: unhaze 1s linear 1.5s forwards;
   @keyframes unhaze {
   100% {
     text-shadow: 3px 0px 0 rgba(6,5,239,0.4), 4px 0px 0 rgba(255,255,255,.6)
@@ -38,7 +38,7 @@ const SubText = styled.div`
   width: fit-content;
   font-size: .5em;
   opacity: .7;
-  animation: blinkon 2s 4s linear forwards;
+  animation: blinkon 2s 3s linear forwards;
   font-family: 'Pacifico', cursive;
   font-display: block;
   --blinkshadow: #ff66b3;

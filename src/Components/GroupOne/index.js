@@ -25,7 +25,7 @@ const Lagos = styled(ParallaxLayer)`
   background-color: rgba(130,50,75,.4);
   will-change: background-color;
   background-position-x: 46%;
-  animation: darker 3s ease-in 1s forwards;
+  animation: darker 2s ease-in 1s forwards;
   @media only screen and (min-width: 813px) {
     background-position-x: 30%
   }
