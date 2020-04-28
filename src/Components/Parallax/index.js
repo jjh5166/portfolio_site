@@ -4,23 +4,23 @@ const handleLayerType = type => {
   switch (type) {
     case "fore":
       return "-webkit-transform: translateZ(.3px) scale(.7) !important;" +
-      "transform: translateZ(.3px) scale(.7) !important;" +
+      "transform: perspective(1px) translateZ(.3px) scale(.7) !important;" +
       "z-index: -1"
     case "deep":
       return "-webkit-transform: translateZ(-3px) scale(4) !important;" +
-      "transform: translateZ(-3px) scale(4) !important;"+
+      "transform: perspective(1px) translateZ(-3px) scale(4) !important;"+
       "z-index: -10;"
     case "back":
       return "-webkit-transform: translateZ(-1px) scale(2) !important;" +
-      "transform: translateZ(-1px) scale(2) !important;" +
+      "transform: perspective(1px) translateZ(-1px) scale(2) !important;" +
       "z-index: -2;"
     case "fly":
       return "-webkit-transform: translateZ(.6px) scale(.4) !important;" +
-      " transform: translateZ(.6px) scale(.4) !important;" +
+      " transform: perspective(1px) translateZ(.6px) scale(.4) !important;" +
       "z-index: 3;"
     default:
       return "-webkit-transform: translateZ(0) !important;" +
-      "transform: translateZ(0) !important;" +
+      "transform: perspective(1px) translateZ(0) !important;" +
       "z-index: 1"
   }
 };
