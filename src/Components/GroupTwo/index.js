@@ -5,20 +5,19 @@ import { ParallaxGroup, ParallaxLayer } from '../Parallax'
 
 const GroupTwo = React.forwardRef((props, ref) => (
 
-  <TwoGroupContainer>
+
     <TwoGroup className="parallax__group" ref={ref}>
-      <Deep type="deep">
-      </Deep>
-      <TwoBase type="base">
-        <About />
-      </TwoBase>
-      <Fore type="fore">
-        {[...Array(30)].map((_, i) => {
+      <Deep type="deep" />
+      <Fore type="back">
+        {[...Array(27)].map((_, i) => {
           return (<TriRow row={i - 10} key={"Row" + i} />)
         })}
       </Fore>
+      <TwoBase type="fore">
+        <About />
+      </TwoBase>
     </TwoGroup>
-  </TwoGroupContainer>
+
 ));
 
 const TriRow = ({ row }) => {
@@ -45,7 +44,6 @@ const Deep = styled(ParallaxLayer)`
   -moz-background-size: contain;
   background-size: contain;
   background-repeat: repeat;
-  top: -10%;
   z-index: -10;
   :before{
     content: '';
@@ -88,16 +86,14 @@ const TwoBase = styled(ParallaxLayer)`
   z-index: 1;
 `
 const TwoGroup = styled(ParallaxGroup)`
-  z-index: 6;
-`
-const TwoGroupContainer = styled.div`
-  width:100%;
-  height: 92%;
+  z-index: 4;
+  /* width:100%; */
+  /* height: 92%;
   @media only screen and (min-height: 600px){
     height: 94%;
   }
   @media only screen and (max-width: 823px) and (orientation: landscape){
     height: 90%;
-  }
+  } */
 `
 export default GroupTwo;

@@ -7,8 +7,8 @@ import { ParallaxGroup, ParallaxLayer } from '../Parallax'
 export default function GroupOne(props) {
   return(
     <OneGroup className="parallax__group">
-      <Lagos type="back"/>
-      <ParallaxLayer type="base">
+      <Lagos type="base"/>
+      <ParallaxLayer type="fore">
         <Title />
       </ParallaxLayer>
       <DownArrow scrollTo={props.nextRef}/>

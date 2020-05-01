@@ -3,37 +3,28 @@ import styled from 'styled-components';
 const handleLayerType = type => {
   switch (type) {
     case "fore":
-      return "-webkit-transform: translateZ(.3px) scale(.7) !important;" +
-      "transform: perspective(1px) translateZ(.3px) scale(.7) !important;" +
-      "z-index: -1"
+      return "-webkit-transform: translateZ(90px) scale(.7) !important;" +
+      "transform: translateZ(90px) scale(.7) !important;"
     case "deep":
-      return "-webkit-transform: translateZ(-3px) scale(4) !important;" +
-      "transform: perspective(1px) translateZ(-3px) scale(4) !important;"+
-      "z-index: -10;"
+      return "transform: translateZ(-450px) scale(2.5) !important;" +
+        "-webkit-transform: translateZ(-450px) scale(2.5) !important;"
     case "back":
-      return "-webkit-transform: translateZ(-1px) scale(2) !important;" +
-      "transform: perspective(1px) translateZ(-1px) scale(2) !important;" +
-      "z-index: -2;"
+      return "-webkit-transform: translateZ(-300px) scale(2) !important;" +
+      "transform: translate3d(-300px) scale(2) !important;"
     case "fly":
-      return "-webkit-transform: translateZ(.6px) scale(.4) !important;" +
-      " transform: perspective(1px) translateZ(.6px) scale(.4) !important;" +
-      "z-index: 3;"
+      return "-webkit-transform: translateZ(180px) scale(.4) !important;" +
+      " transform: translateZ(180px) scale(.4) !important;"
     default:
-      return "-webkit-transform: translateZ(0) !important;" +
-      "transform: perspective(1px) translateZ(0) !important;" +
-      "z-index: 1"
+      return null
   }
 };
 export const ParallaxGroup = styled.div`
   position: relative;
-  height: 100%;
+  height: 100vh;
   width:100%;
   scroll-snap-align: start;
-  overflow: hidden;
-  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
-    transform-style: preserve-3d;
-  };
-  `
+  transform-style: preserve-3d;
+`
 
 export const ParallaxLayer = styled.div`
   position: absolute;
@@ -42,6 +33,8 @@ export const ParallaxLayer = styled.div`
   bottom: 0;
   left: 0;
   text-align: center;
+  transform-style: preserve-3d;
+  transform-origin: 0 0;
   @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
     ${({ type }) => handleLayerType(type)};
   };
@@ -49,13 +42,14 @@ export const ParallaxLayer = styled.div`
 
 export const ParallaxContainer = styled.div`
   height: 100%;
+  width:100%;
+  perspective: 300px;
+  perspective-origin: 0 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
   min-height: -webkit-fill-available;
   -webkit-overflow-scrolling: touch;
-  overflow-x: hidden;
-  overflow-y: auto;
   font-size: 200%;
   scroll-snap-type: y proximity;
-  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
-    perspective: 1px;
-  };
 `
